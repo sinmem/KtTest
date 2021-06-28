@@ -1,11 +1,30 @@
 package entity
 
-import org.junit.Assert.*
 import org.junit.Test
 
-class ManTest
+object ManTest{
+    @JvmStatic
+    fun main(args: Array<String>){
+        testHeight()
+    }
 
-@Test fun testHeight(){
-    var m = Man("张三", 180, 18)
-    print(m.height)
+    fun Man.p(){
+        print("${this}")
+    }
+
+    @Test fun testHeight(){
+        var m = Man("张三", 180, 18)
+        print(m)
+
+        var men :List<Man> = mutableListOf(Man("张三", 180, 18))
+        var women :List<Man> = mutableListOf(Man("李四", 180, 18))
+        var hu :List<Human> = men;
+//        var men :MutableList<Man> = mutableListOf(Man("张三", 180, 18))
+//        var women :MutableList<Man> = mutableListOf(Man("李四", 180, 18))
+//        var hu :MutableList<Human> = men;
+    }
 }
+
+
+
+

@@ -1,6 +1,6 @@
 package entity
 
-class Man: Human{
+class Woman: Human{
     //    constructor(name: String) : super(name) {}
     var age:Int?=0
     constructor(name: String, height: Int) : super(name) {
